@@ -1,11 +1,39 @@
 <html>
 <head>
 	<title> Upneet Randhawa</title>
-</head>
+
+	<!-- Script Reference -> http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 700, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 
 <style type="text/css">
 body {
-	background-color: black;
+	background-color: white;
 }
 
 .nav{
@@ -18,15 +46,22 @@ body {
     overflow: hidden;
     background-color: #222;
     position: fixed;
+    margin-left: -8px;
+
 
 }
 
 .welcome_pane_container{
+	background-color: black;
 	padding-top: 200px;
+	padding-bottom: 390px;
+	margin-left: -8px;
+	margin-right:-8px;
 	color: white;
 	font-size: 90;
-	font-family: serif;
+	font-family: Consolas, monaco, monospace;
 	text-align: center;
+
 }
 ul {
     list-style-type: none;
@@ -45,7 +80,7 @@ li a {
     padding: 0px 20px;
     text-decoration: none;
     font-size: 20;
-    font-family: sans-serif;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 
   
 }
@@ -54,7 +89,7 @@ li a:hover {
     opacity: 0.9;
 }
 </style>
-
+</head>
 <body>
 <!-- The Navigation Bar -->
 	<div class="nav">
@@ -67,11 +102,18 @@ li a:hover {
 		</ul>
 	</div>
 <!-- Welcome Pane -->
-    <div class = "welcome_pane_container">
+    <div class = "welcome_pane_container" id="home">
     	Upneet Randhawa 
     </div>
 	
-
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>
+<br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br>
+	<br><br><br><br><br>kfjkfhhjfhkjfkf
     
 
 
