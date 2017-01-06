@@ -34,6 +34,7 @@ $(document).ready(function(){
 <style type="text/css">
 body {
 	background-color: white;
+	transition: all 0.5s ease;
 }
 
 .nav{
@@ -52,8 +53,8 @@ body {
 }
 
 .welcome_pane_container{
-	background-color: black;
-	padding-top: 200px;
+	background-color: red;
+	padding-top: 280px;
 	padding-bottom: 390px;
 	margin-left: -8px;
 	margin-right:-8px;
@@ -62,6 +63,20 @@ body {
 	font-family: Consolas, monaco, monospace;
 	text-align: center;
 
+}
+.welcome_pane_bottom{
+	font-size: 25; 
+	padding: 120px 0 0 370px;
+	opacity: 0.92;
+   
+}
+.profile{
+	background-color: green;
+	padding: 500px -8px 200px -8px;
+}
+.project{
+	background-color: blue;
+	padding: 1000px -8px 650px -8px;
 }
 ul {
     list-style-type: none;
@@ -88,6 +103,18 @@ li a {
 li a:hover {
     opacity: 0.9;
 }
+
+./*hline { 
+	width:8%;
+    height:1px; 
+    margin-left: 280px;
+    margin-top: 50px;
+    vertical-align: center;
+    background: #fff;
+    text-orientation: center; 
+    opacity: 0.9;
+
+}*/
 </style>
 </head>
 <body>
@@ -95,7 +122,7 @@ li a:hover {
 	<div class="nav">
 		<ul>
 			<li><a href = "#home"> Home </a></li>
-			<li><a href = "#about_me"> Profile </a></li>
+			<li><a href = "#profiles"> Profile </a></li>
 			<li><a href = "#projects"> Projects </a></li>
 			<li><a href = "#resume"> Resume </a></li>
 			<li><a href = "#contact"> Contact </a></li>
@@ -104,12 +131,31 @@ li a:hover {
 <!-- Welcome Pane -->
     <div class = "welcome_pane_container" id="home">
     	Upneet Randhawa 
+    	
+    	<div class = "welcome_pane_bottom">
+    		Software Engineer | Developer 
+    	</div>
     </div>
+<!--  Profile Pane -->
+	<div class = "profile" id = "profiles">
+	<br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br>
+	</div>
+<!-- Projects Pane -->
+	<div class = "project" id = "projects">
+	djdjdklj<br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br>
+	</div>
+
+
 	
 	<br><br><br><br><br>
 	<br><br><br><br><br>
 	<br><br><br><br><br>
-<br><br><br><br><br>
+    <br><br><br><br><br>
 	<br><br><br><br><br>
 	<br><br><br><br><br><br><br><br><br><br>
 	<br><br><br><br><br>
