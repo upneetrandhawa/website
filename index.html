@@ -33,18 +33,19 @@ $(document).ready(function(){
 
 <style type="text/css">
 body {
-	background-color: white;
-	animation: entry 1s 1;
+	background-color: black;
+
+	/*animation: entry 1s 1;*/
 	
 }
-@keyframes entry {
+/*keyframes entry {
 	0% {
 		opacity: 0;
 	}
 	100%{
 		opacity: 1;
 	}
-}
+}*/
 .nav{
 	background-color: black;
 
@@ -58,8 +59,6 @@ body {
     position: fixed;
     margin-left: -8px;
     
-
-
 }
 
 .welcome_pane_container{
@@ -77,19 +76,45 @@ body {
 
 }
 .welcome_pane_bottom{
+	
 	font-size: 25; 
 	padding: 120px 0 0 370px;
 	opacity: 0.92;
+
+
    
 }
-.profile{
+.profile_container{
 	background-color: white;
 	/*padding: 400px -8px 200px -8px;*/
 	height: 710px;
 	margin-left: -10px;
 	margin-right: -10px;
+	
+}
+.profile_text{
+	font-size: 20; 
+	font-family: Consolas, monaco, monospace;
+	text-align: center;
+	letter-spacing: 0px;
+	padding: 10px 50px 20px 50px;
+	word-spacing: 0px;
 }
 .project{
+	background-color: black;
+	/*padding: 1000px -8px 650px -8px;*/
+	height: 710px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.resume{
+	background-color: white;
+	/*padding: 1000px -8px 650px -8px;*/
+	height: 710px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.contact{
 	background-color: black;
 	/*padding: 1000px -8px 650px -8px;*/
 	height: 710px;
@@ -102,6 +127,15 @@ img {
 	margin-right: -30px;
 	margin-left: -20px;
 	margin-top: -20px;
+}
+.img-circle {
+	border-radius: 70%;
+	width: 250px;
+	height: 200px;
+	margin-top: 70px;
+	
+
+
 }
 ul {
     list-style-type: none;
@@ -138,8 +172,8 @@ li a:hover {
 			<li><a href = "#home"> Home </a></li>
 			<li><a href = "#profiles"> Profile </a></li>
 			<li><a href = "#projects"> Projects </a></li>
-			<li><a href = "#resume"> Resume </a></li>
-			<li><a href = "#contact"> Contact </a></li>
+			<li><a href = "#resumes"> Resumes</a></li>
+			<li><a href = "#contacts"> Contact </a></li>
 		</ul>
 	</div>
 <!-- Welcome Pane -->
@@ -153,14 +187,36 @@ li a:hover {
     	</div>
     </div>
 <!--  Profile Pane -->
-	<div class = "profile" id = "profiles">
-	<br><br><br>
-	<br><br><br><br><br><br><br><br>
-	<br><br><br><br><br><br><br><br>
-	<br><br><br><br><br>
+	<div class = "profile_container" id = "profiles">
+		<center>
+			<img class = "img-circle" src = "file:///Users/upneetrandhawa/Documents/www_upneetrandhawa_com/profile.png">
+		</center>
+		<br><br>
+		<div class="profile_text">
+			My name is Upneet Randhawa and I'm in 3<sup>rd</sup> year pursuing bachelor's in Computer Engineering at University of Toronto. As a kid I was fascinated with technology especially software. During my middle school, I started learning programming on my own, which made me able to take advance level programming courses. Alongside my courses at University, I started developing Mobile Apps. 
+			<br><br>
+			Apart from developing I love to do photography, Adventure Sports and play Basketball. I've represented my School in Debates, Presentations and Sports.
+			<br><br>
+			My projects have helped me to widen my skill set, apply my theoretical knowledge to solve real world problems, and motivated me to continuously learn more. I have been recognized for my leadership, hard plus honest work and team building skills.
+			
+		</div>
 	</div>
 <!-- Projects Pane -->
 	<div class = "project" id = "projects">
+
+	djdjdklj<br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br>
+	</div>
+<!-- Resume Pane -->
+	<div class = "resume" id = "resumes">
+
+	djdjdklj<br><br><br>
+	<br><br><br><br><br><br><br><br>
+	<br><br><br><br><br>
+	</div>
+<!-- Contact Pane -->
+	<div class = "contact" id = "contacts">
 
 	djdjdklj<br><br><br>
 	<br><br><br><br><br><br><br><br>
