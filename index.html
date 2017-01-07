@@ -79,8 +79,7 @@ body {
 	
 	font-size: 25; 
 	padding: 120px 0 0 370px;
-	opacity: 0.92;
-
+	
 
    
 }
@@ -106,13 +105,29 @@ body {
 	height: 710px;
 	margin-left: -10px;
 	margin-right: -10px;
+	color: white;
+
 }
 .resume{
 	background-color: white;
 	/*padding: 1000px -8px 650px -8px;*/
-	height: 710px;
+	
 	margin-left: -10px;
 	margin-right: -10px;
+	color: black;
+	text-align: center;
+	font-size: 45; 
+	font-family: Consolas, monaco, monospace;
+	background-image: url(whiteBackground.jpg);
+	/* Set a specific height */
+    height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .contact{
 	background-color: black;
@@ -133,9 +148,15 @@ img {
 	width: 250px;
 	height: 200px;
 	margin-top: 70px;
-	
+}
+.img-background{
+	background-image: url(whiteBackground.jpg);
+
+}
 
 
+form{
+	width: 100px;
 }
 ul {
     list-style-type: none;
@@ -161,6 +182,33 @@ li a {
 
 li a:hover {
     opacity: 0.9;
+    background-color: black;
+}
+
+.button {
+  padding: 10px 25px;
+  font-size: 28;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+
+}
+
+.button:hover {
+	background-color: #323232
+}
+
+.button:active {
+  background-color: #4c4c4c;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 </style>
@@ -172,7 +220,7 @@ li a:hover {
 			<li><a href = "#home"> Home </a></li>
 			<li><a href = "#profiles"> Profile </a></li>
 			<li><a href = "#projects"> Projects </a></li>
-			<li><a href = "#resumes"> Resumes</a></li>
+			<li><a href = "#resumes"> Resume</a></li>
 			<li><a href = "#contacts"> Contact </a></li>
 		</ul>
 	</div>
@@ -210,10 +258,16 @@ li a:hover {
 	</div>
 <!-- Resume Pane -->
 	<div class = "resume" id = "resumes">
-
-	djdjdklj<br><br><br>
-	<br><br><br><br><br><br><br><br>
-	<br><br><br><br><br>
+		<br>
+		<font style="text-shadow: 8px 8px 4px rgba(150, 150, 150, 0.72);">
+		Looking for Resume?
+		</font>
+		<br><br>
+		<a href="resume.pdf" target="_blank">
+			<button class="button" value="RESUME" formtarget = "_blank">
+				RESUME
+			</button>
+		</a>
 	</div>
 <!-- Contact Pane -->
 	<div class = "contact" id = "contacts">
