@@ -1,9 +1,11 @@
 <html>
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/> 
 	<title> Upneet Randhawa</title>
 
 	<!-- Script Reference -> http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -29,8 +31,47 @@ $(document).ready(function(){
     } // End if
   });
 });
-</script>
 
+// 	$(function() {
+// 		$(window).scroll(function(){
+//      var pgurl = window.location.href.substr(window.location.href
+// .lastIndexOf("#")+0);
+//      $("li a").each(function(){
+//           if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
+//           $(this).addClass("active");
+//      });
+//  });
+// });
+$(document).ready(function(){
+	var pgurl = '';
+	$(window).scroll(function(){
+		 pgurl = window.location.href.substr(window.location.href
+.lastIndexOf("#")+0);
+		if (pgurl == '#Home' || pgurl == '#Projects' || pgurl == '#Contact')
+		$('.nav').css('background-color', 'black');
+	});
+});
+
+
+
+
+// 	(document).ready(function(){       
+//    // var current_color = "rgb(220, 20, 60)";
+//    $(document).scroll(function() { 
+//    // var current_color = $(this).css('background-color');
+//    if ($(this).attr('href') == '#Home' || $(this).attr('href') == '#Projects' || $(this).attr('href') == '#Contact')
+//         $('.nav').css('background-color', 'white'); //go
+//     else {
+//     	$('.nav').css('background-color', 'black');
+//     }
+//       // if(current_color == 'white' || current_color == 'rgb(255, 255, 255)') {
+//       //     $('.nav').css('background-color', 'black');
+//       //  } else {
+//       //     $('.nav').css('background-color', 'white');
+//       //  }
+//    });
+// });
+</script> -->
 <style type="text/css">
 body {
 	background-color: black;
@@ -38,26 +79,30 @@ body {
 	/*animation: entry 1s 1;*/
 	
 }
-/*keyframes entry {
+@keyframes animation_bottom_to_up {
 	0% {
+		
 		opacity: 0;
 	}
 	100%{
+		transform: translateY(0px);
 		opacity: 1;
 	}
-}*/
+}
 .nav{
 	background-color: black;
 
 	text-align: center;
 	top: 0;
     width: 100%;
-    margin: 0;
+    margin: 38;
     padding: 0;
     overflow: hidden;
     background-color: #222;
     position: fixed;
     margin-left: -8px;
+    /*transition-duration: 1s;*/
+
     
 }
 
@@ -70,21 +115,24 @@ body {
 	margin-right:-10px;
 	color: white;
 	font-size: 90;
+
 	font-family: Consolas, monaco, monospace;
 	text-align: center;
-	
+
+    
 
 }
 .welcome_pane_bottom{
 	
 	font-size: 25; 
 	padding: 120px 0 0 370px;
-	
+	/*animation: animation_bottom_to_up 5s 1;
+	transform: translateY(30px);*/
 
    
 }
 .profile_container{
-	background-color: white;
+	background-color:#EBEBEB;
 	/*padding: 400px -8px 200px -8px;*/
 	height: 710px;
 	margin-left: -10px;
@@ -98,8 +146,10 @@ body {
 	letter-spacing: 0px;
 	padding: 10px 50px 20px 50px;
 	word-spacing: 0px;
+	/*animation: animation_bottom_to_up 5s 1;
+	transform: translateY(30px);*/
 }
-.project{
+.project_container{
 	background-color: black;
 	/*padding: 1000px -8px 650px -8px;*/
 	height: 710px;
@@ -108,8 +158,8 @@ body {
 	color: white;
 
 }
-.resume{
-	background-color: white;
+.resume_container{
+	background-color: #EBEBEB;
 	/*padding: 1000px -8px 650px -8px;*/
 	
 	margin-left: -10px;
@@ -129,7 +179,7 @@ body {
     background-size: cover;
 
 }
-.contact{
+.contact_container{
 	background-color: black;
 	/*padding: 1000px -8px 650px -8px;*/
 	height: 710px;
@@ -185,6 +235,11 @@ li a:hover {
     background-color: black;
 }
 
+li a.active {
+	
+    border:2px #FFF solid;
+    
+}
 .button {
   padding: 10px 25px;
   font-size: 28;
@@ -211,22 +266,27 @@ li a:hover {
   transform: translateY(4px);
 }
 
+
 </style>
 </head>
 <body>
+	<div style="background-color: yellow; font-family: sans-serif; font-size: 30; position: fixed; text-align: center; height: 40px; width: 100%; margin-top: -10; margin-right: -50; margin-left: -20;">
+		!!!WEBSITE UNDER CONSTRUCTION!!!
+		</div>
+
 <!-- The Navigation Bar -->
 	<div class="nav">
 		<ul>
-			<li><a href = "#home"> Home </a></li>
-			<li><a href = "#profiles"> Profile </a></li>
-			<li><a href = "#projects"> Projects </a></li>
-			<li><a href = "#resumes"> Resume</a></li>
-			<li><a href = "#contacts"> Contact </a></li>
+			<li><a href = "#Home"> Home </a></li>
+			<li><a href = "#Profile"> Profile </a></li>
+			<li><a href = "#Projects"> Projects </a></li>
+			<li><a href = "#Resume"> Resume</a></li>
+			<li><a href = "#Contact"> Contact </a></li>
 		</ul>
 	</div>
 <!-- Welcome Pane -->
 
-    <div class = "welcome_pane_container" id="home">
+    <div class = "welcome_pane_container" id="Home">
 
     	Upneet Randhawa 
     	
@@ -235,9 +295,13 @@ li a:hover {
     	</div>
     </div>
 <!--  Profile Pane -->
-	<div class = "profile_container" id = "profiles">
+	<div class = "profile_container" id = "Profile">
 		<center>
-			<img class = "img-circle" src = "profile.png">
+			<!-- <img class = "img-circle" src = "profile.png"> -->
+			<br><br><br><br><br>
+			<font size="60" face="Consolas, monaco, monospace">
+			About Me
+			</font>
 		</center>
 		<br><br>
 		<div class="profile_text">
@@ -250,14 +314,14 @@ li a:hover {
 		</div>
 	</div>
 <!-- Projects Pane -->
-	<div class = "project" id = "projects">
+	<div class = "project_container" id = "Projects">
 
 	djdjdklj<br><br><br>
 	<br><br><br><br><br><br><br><br>
 	<br><br><br><br><br>
 	</div>
 <!-- Resume Pane -->
-	<div class = "resume" id = "resumes">
+	<div class = "resume_container" id = "Resume">
 		<br>
 		<font style="text-shadow: 8px 8px 4px rgba(150, 150, 150, 0.72);">
 		Looking for Resume?
@@ -270,7 +334,7 @@ li a:hover {
 		</a>
 	</div>
 <!-- Contact Pane -->
-	<div class = "contact" id = "contacts">
+	<div class = "contact_container" id = "Contact">
 
 	djdjdklj<br><br><br>
 	<br><br><br><br><br><br><br><br>
